@@ -6,10 +6,10 @@ part 'address_suggestion_radius_constraint.g.dart';
 @JsonSerializable(explicitToJson: true, nullable: true)
 class AddressSuggestionRadiusConstraint {
   @JsonKey(name: "lat", required: true)
-  double latitude;
+  double? latitude;
 
   @JsonKey(name: "lon", required: true)
-  double longitude;
+  double? longitude;
 
   int _radiusMeters = 100;
 
@@ -37,7 +37,7 @@ class AddressSuggestionRadiusConstraint {
   AddressSuggestionRadiusConstraint({
     this.latitude,
     this.longitude,
-    int radiusMeters,
+    int radiusMeters =0,
   }) : this._radiusMeters = radiusMeters;
 
   AddressSuggestionRadiusConstraint.fromString(String latLon,

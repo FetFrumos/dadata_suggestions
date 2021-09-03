@@ -5,10 +5,10 @@ part 'revgeocode_suggestion_request.g.dart';
 @JsonSerializable(explicitToJson: true, nullable: true)
 class RevgeocodeSuggestionRequest {
   @JsonKey(name: "lat", required: true)
-  double latitude;
+  double? latitude;
 
   @JsonKey(name: "lon", required: true)
-  double longitude;
+  double? longitude;
 
   @JsonKey(name: 'count')
   int count = 10;
@@ -38,10 +38,10 @@ class RevgeocodeSuggestionRequest {
   ///[latitude] and [longitude] of the point of interest are required.
   ///[count] defaults to `10` and [language] defaults to `ru`.
   RevgeocodeSuggestionRequest({
-    this.latitude,
-    this.longitude,
-    this.count,
-    this.language,
+    required this.latitude,
+    required this.longitude,
+    required this.count,
+    required this.language,
     radiusMeters,
   });
 
@@ -62,6 +62,8 @@ class RevgeocodeSuggestionRequest {
     RevgeocodeSuggestionRequest(
       latitude: lat,
       longitude: lon,
+      count: 10, language: 'ru'
+
     );
   }
 

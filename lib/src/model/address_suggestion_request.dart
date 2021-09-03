@@ -19,20 +19,21 @@ class AddressSuggestionRequest {
   String language = 'ru';
 
   @JsonKey(name: 'locations')
-  List<AddressSuggestionConstraint> constraints;
+  List<AddressSuggestionConstraint?>? constraints;
 
   @JsonKey(name: 'locations_geo')
-  List<AddressSuggestionRadiusConstraint> radiusConstraints;
+  List<AddressSuggestionRadiusConstraint?>? radiusConstraints;
 
   @JsonKey(name: 'locations_boost')
-  List<AddressSuggestionPriority> locationsPriority;
+  List<AddressSuggestionPriority?>? locationsPriority;
 
-  LevelBoundry _upperBoundary;
-  LevelBoundry _lowerBoundary;
+  LevelBoundry? _upperBoundary;
+  LevelBoundry? _lowerBoundary;
 
   @JsonKey(name: 'from_bound')
   String get upperBoundary {
-    return _upperBoundary.value;
+
+    return _upperBoundary == null ? '': _upperBoundary!.value;
   }
 
   @JsonKey(name: 'from_bound')
@@ -50,7 +51,7 @@ class AddressSuggestionRequest {
 
   @JsonKey(name: 'to_bound')
   String get lowerBoundary {
-    return _lowerBoundary.value;
+    return  _lowerBoundary ==null ? '':  _lowerBoundary!.value;
   }
 
   @JsonKey(name: 'to_bound')
@@ -70,14 +71,14 @@ class AddressSuggestionRequest {
   ///[query] is required field.
   ///[count] defaults to `10` and [language] defaults to `ru`.
   AddressSuggestionRequest(
-    this.query, {
-    this.count,
-    this.language,
-    this.constraints,
-    this.radiusConstraints,
-    this.locationsPriority,
-    LevelBoundry upperBoundary,
-    LevelBoundry lowerBoundary,
+    this.query,{
+     required this.count,
+        required this.language,
+        this.constraints,
+        this.radiusConstraints,
+        this.locationsPriority,
+        required LevelBoundry upperBoundary,
+        required LevelBoundry lowerBoundary,
   })  : this._upperBoundary = upperBoundary,
         this._lowerBoundary = lowerBoundary;
 

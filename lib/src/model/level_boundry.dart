@@ -29,13 +29,13 @@ extension LevelBoundryValue on LevelBoundry {
         return 'house';
         break;
       default:
-        return null;
+        return '';
     }
   }
 
   /// Converts string [value] to enum case if available.
   /// Please check [LevelBoundry] for available cases.
-  static LevelBoundry forValue(String value) {
+  static LevelBoundry? forValue(String value) {
     switch (value) {
       case 'country':
         return LevelBoundry.country;

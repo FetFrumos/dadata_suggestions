@@ -5,251 +5,251 @@ part 'suggestion_data.g.dart';
 @JsonSerializable(explicitToJson: true, nullable: true)
 class SuggestionData {
   @JsonKey(name: 'postal_code')
-  String postalCode;
+  late String postalCode;
 
   @JsonKey(name: 'country')
-  String country;
+  late String country;
 
   @JsonKey(name: 'country_iso_code')
-  String countryIsoCode;
+  late String countryIsoCode;
 
   @JsonKey(name: 'federal_district')
-  String federalDistrict;
+  late String federalDistrict;
 
   @JsonKey(name: 'region_fias_id')
-  String regionFiasId;
+  late String regionFiasId;
 
   @JsonKey(name: 'region_kladr_id')
-  String regionKladrId;
+  late String regionKladrId;
 
   @JsonKey(name: 'region_iso_code')
-  String regionIsoCode;
+  late String regionIsoCode;
 
   @JsonKey(name: 'region_with_type')
-  String regionWithType;
+  late String regionWithType;
 
   @JsonKey(name: 'region_type')
-  String regionType;
+  late String regionType;
 
   @JsonKey(name: 'region_type_full')
-  String regionTypeFull;
+  late String regionTypeFull;
 
   @JsonKey(name: 'region')
-  String region;
+  late String region;
 
   @JsonKey(name: 'area_fias_id')
-  String areaFiasId;
+  late String areaFiasId;
 
   @JsonKey(name: 'area_kladr_id')
-  String areaKladrId;
+  late String areaKladrId;
 
   @JsonKey(name: 'area_with_type')
-  String areaWithType;
+  late String areaWithType;
 
   @JsonKey(name: 'area_type')
-  String areaType;
+  late String areaType;
 
   @JsonKey(name: 'area_type_full')
-  String areaTypeFull;
+  late String areaTypeFull;
 
   @JsonKey(name: 'area')
-  String area;
+  late String area;
 
   @JsonKey(name: 'city_fias_id')
-  String cityFiasId;
+  late String cityFiasId;
 
   @JsonKey(name: 'city_kladr_id')
-  String cityKladrId;
+  late String cityKladrId;
 
   @JsonKey(name: 'city_with_type')
-  String cityWithType;
+  late String cityWithType;
 
   @JsonKey(name: 'city_type')
-  String cityType;
+  late String cityType;
 
   @JsonKey(name: 'city_type_full')
-  String cityTypeFull;
+  late String cityTypeFull;
 
   @JsonKey(name: 'city')
-  String city;
+  late String city;
 
   @JsonKey(name: 'city_area')
-  String cityArea;
+  late String cityArea;
 
   @JsonKey(name: 'city_district_fias_id')
-  String cityDistrictFiasId;
+  late String cityDistrictFiasId;
 
   @JsonKey(name: 'city_district_kladr_id')
-  String cityDistrictKladrId;
+  late String cityDistrictKladrId;
 
   @JsonKey(name: 'city_district_with_type')
-  String cityDistrictWithType;
+  late String cityDistrictWithType;
 
   @JsonKey(name: 'city_district_type')
-  String cityDistrictType;
+  late String cityDistrictType;
 
   @JsonKey(name: 'city_district_type_full')
-  String cityDistrictTypeFull;
+  late String cityDistrictTypeFull;
 
   @JsonKey(name: 'city_district')
-  String cityDistrict;
+  late String cityDistrict;
 
   @JsonKey(name: 'settlement_fias_id')
-  String settlementFiasId;
+  late String settlementFiasId;
 
   @JsonKey(name: 'settlement_kladr_id')
-  String settlementKladrId;
+  late String settlementKladrId;
 
   @JsonKey(name: 'settlement_with_type')
-  String settlementWithType;
+  late String settlementWithType;
 
   @JsonKey(name: 'settlement_type')
-  String settlementType;
+  late String settlementType;
 
   @JsonKey(name: 'settlement_type_full')
-  String settlementTypeFull;
+  late String settlementTypeFull;
 
   @JsonKey(name: 'settlement')
-  String settlement;
+  late String settlement;
 
   @JsonKey(name: 'street_fias_id')
-  String streetFiasId;
+  late String streetFiasId;
 
   @JsonKey(name: 'street_kladr_id')
-  String streetKladrId;
+  late String streetKladrId;
 
   @JsonKey(name: 'street_with_type')
-  String streetWithType;
+  late String streetWithType;
 
   @JsonKey(name: 'street_type')
-  String streetType;
+  late String streetType;
 
   @JsonKey(name: 'street_type_full')
-  String streetTypeFull;
+  late String streetTypeFull;
 
   @JsonKey(name: 'street')
-  String street;
+  late String street;
 
   @JsonKey(name: 'house_fias_id')
-  String houseFiasId;
+  late String houseFiasId;
 
   @JsonKey(name: 'house_kladr_id')
-  String houseKladrId;
+  late String houseKladrId;
 
   @JsonKey(name: 'house_type')
-  String houseType;
+  late String houseType;
 
   @JsonKey(name: 'house_type_full')
-  String houseTypeFull;
+  late String houseTypeFull;
 
   @JsonKey(name: 'house')
-  String house;
+  late String house;
 
   @JsonKey(name: 'block_type')
-  String blockType;
+  late String blockType;
 
   @JsonKey(name: 'block_type_full')
-  String blockTypeFull;
+  late String blockTypeFull;
 
   @JsonKey(name: 'block')
-  String block;
+  late String block;
 
   @JsonKey(name: 'flat_fias_id')
-  String flatFiasId;
+  late String flatFiasId;
 
   @JsonKey(name: 'flat_type')
-  String flatType;
+  late String flatType;
 
   @JsonKey(name: 'flat_type_full')
-  String flatTypeFull;
+  late String flatTypeFull;
 
   @JsonKey(name: 'flat')
-  String flat;
+  late String flat;
 
   @JsonKey(name: 'flat_area')
-  String flatArea;
+  late String flatArea;
 
   @JsonKey(name: 'square_meter_price')
-  String squareMeterPrice;
+  late String squareMeterPrice;
 
   @JsonKey(name: 'flat_price')
-  String flatPrice;
+  late String flatPrice;
 
   @JsonKey(name: 'postal_box')
-  String postalBox;
+  late String postalBox;
 
   @JsonKey(name: 'fias_id')
-  String fiasId;
+  late String fiasId;
 
   @JsonKey(name: 'fias_code')
-  String fiasCode;
+  late String fiasCode;
 
   @JsonKey(name: 'fias_level')
-  String fiasLevel;
+  late String fiasLevel;
 
   @JsonKey(name: 'fias_actuality_state')
-  String fiasActualityState;
+  late String fiasActualityState;
 
   @JsonKey(name: 'kladr_id')
-  String kladrId;
+  late String kladrId;
 
   @JsonKey(name: 'geoname_id')
-  String geonameId;
+  late String geonameId;
 
   @JsonKey(name: 'capital_marker')
-  String capitalMarker;
+  late String capitalMarker;
 
   @JsonKey(name: 'okato')
-  String okato;
+  late String okato;
 
   @JsonKey(name: 'oktmo')
-  String oktmo;
+  late String oktmo;
 
   @JsonKey(name: 'tax_office')
-  String taxOffice;
+  late String taxOffice;
 
   @JsonKey(name: 'tax_office_legal')
-  String taxOfficeLegal;
+  late String taxOfficeLegal;
 
   @JsonKey(name: 'timezone')
-  String timezone;
+  late String timezone;
 
   @JsonKey(name: 'geo_lat')
-  dynamic geoLat;
+  late dynamic geoLat;
 
   @JsonKey(name: 'geo_lon')
-  dynamic geoLon;
+  late dynamic geoLon;
 
   @JsonKey(name: 'beltway_hit')
-  String beltwayHit;
+  late String beltwayHit;
 
   @JsonKey(name: 'beltway_distance')
-  String beltwayDistance;
+  late String beltwayDistance;
 
   // Actual Metro to be implemented.
   @JsonKey(name: 'metro')
-  List<dynamic> metro;
+  late List<dynamic> metro;
 
   @JsonKey(name: 'qc')
-  dynamic qc;
+  late dynamic qc;
 
   @JsonKey(name: 'qc_geo')
-  dynamic qcGeo;
+  late dynamic qcGeo;
 
   @JsonKey(name: 'qc_complete')
-  dynamic qcComplete;
+  late dynamic qcComplete;
 
   @JsonKey(name: 'qc_house')
-  dynamic qcHouse;
+  late dynamic qcHouse;
 
   @JsonKey(name: 'history_values')
-  List<String> historyValues;
+  late List<String> historyValues;
 
   @JsonKey(name: 'unparsed_parts')
-  String unparsedParts;
+  late String unparsedParts;
 
   @JsonKey(name: 'source')
-  String source;
+  late String source;
 
   SuggestionData();
 

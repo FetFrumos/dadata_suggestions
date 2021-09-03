@@ -15,11 +15,11 @@ class AddressSuggestion {
 
   ///All the data returned in response to suggestion query.
   @JsonKey(name: 'data')
-  SuggestionData data;
+  SuggestionData? data;
 
   AddressSuggestion({
-    this.value,
-    this.unrestrictedValue,
+    required  this.value,
+    required this.unrestrictedValue,
     this.data,
   });
 
