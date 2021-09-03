@@ -41,7 +41,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 PageRouteBuilder(
                   opaque: false,
                   pageBuilder: (BuildContext context, a, b) {
-                    return SuggestionsScreen(token: string);
+                    return SuggestionsScreen(token: '4b1baf9daa67e296f79cfe70d5aea6c937eeb112');
                   },
                 ),
               );

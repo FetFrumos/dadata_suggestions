@@ -21,7 +21,8 @@ class DadataClient {
   Future<AddressResponse?> suggest(AddressSuggestionRequest query) async {
     try {
       final q = query.toJson();
-      return _performRequest(q, Constants.addressEndpoint);
+      var res = _performRequest(q, Constants.addressEndpoint);
+      return res;
     } catch (e) {
       throw e;
     }

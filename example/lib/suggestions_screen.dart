@@ -36,7 +36,9 @@ class _SuggestionsScreenState extends State<SuggestionsScreen> {
                   ),
                 );
               },
-              onSuggestionSelected: (a) {},
+              onSuggestionSelected: (a) {
+                print(a);
+              },
             ),
           ),
         ],
