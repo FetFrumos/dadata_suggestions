@@ -4,6 +4,7 @@ import 'address_suggestion_constraint.dart';
 import 'address_suggestion_priority.dart';
 import 'address_suggestion_radius_constraint.dart';
 import 'level_boundry.dart';
+import 'package:collection/collection.dart';
 part 'address_suggestion_request.g.dart';
 
 ///Used to call address sugestions API.
@@ -77,8 +78,8 @@ class AddressSuggestionRequest {
         this.constraints,
         this.radiusConstraints,
         this.locationsPriority,
-        required LevelBoundry upperBoundary,
-        required LevelBoundry lowerBoundary,
+        required LevelBoundry? upperBoundary,
+        required LevelBoundry? lowerBoundary,
   })  : this._upperBoundary = upperBoundary,
         this._lowerBoundary = lowerBoundary;
 

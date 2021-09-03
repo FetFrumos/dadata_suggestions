@@ -12,7 +12,8 @@ dependencies:
     sdk: flutter
   json_annotation: ^4.0.0
   http: ^0.13.3
-  analyzer: ^1.7.0
+  collection: ^1.15.0
+  #analyzer: ^2.1.0
 dev_dependencies:
   flutter_test:
     sdk: flutter

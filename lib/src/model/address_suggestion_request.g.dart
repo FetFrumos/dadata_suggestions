@@ -61,8 +61,8 @@ T? _$enumDecode<T>(
         '${enumValues.values.join(', ')}');
   }
 
-  final value = enumValues.entries
-      .singleWhere((e) => e.value == source, orElse: () => 'null')
+  T? value = enumValues.entries
+      .firstWhereOrNull((e) => e.value == source)
       ?.key;
 
   if (value == null && unknownValue == null) {

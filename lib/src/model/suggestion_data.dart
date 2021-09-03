@@ -243,7 +243,7 @@ class SuggestionData {
   late dynamic qcHouse;
 
   @JsonKey(name: 'history_values')
-  late List<String> historyValues;
+  late List<String>? historyValues;
 
   @JsonKey(name: 'unparsed_parts')
   late String unparsedParts;

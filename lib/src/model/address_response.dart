@@ -6,7 +6,7 @@ part 'address_response.g.dart';
 @JsonSerializable(explicitToJson: true, nullable: true)
 class AddressResponse {
   @JsonKey(name: 'suggestions')
-  late List<AddressSuggestion> suggestions;
+  late List<AddressSuggestion?>? suggestions;
 
   AddressResponse();
 
