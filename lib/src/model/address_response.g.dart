@@ -9,10 +9,10 @@ part of 'address_response.dart';
 AddressResponse _$AddressResponseFromJson(Map<String, dynamic> json) {
   return AddressResponse()
     ..suggestions = (json['suggestions'] as List)
-        ?.map((e) => e == null
+        .map((e) => e == null
         ? null
         : AddressSuggestion.fromJson(e as Map<String, dynamic>))
-        ?.toList();
+        .toList();
 }
 
 Map<String, dynamic> _$AddressResponseToJson(AddressResponse instance) =>
